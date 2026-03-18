@@ -6,7 +6,7 @@ password = os.getenv("TEST_PASS")
 
 print(username, password)
 
-html_content = """
+html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,8 @@ html_content = """
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>Username: {username}</h1>
+    <h1>Password: {password}</h1>
 </body>
 </html>
 """
